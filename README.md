@@ -182,6 +182,8 @@ CAPSTONE PROJECT
     - Define steps for the build pipeline in `azure_build_pipeline.yaml`.
     - Include tasks for installing Python, checking out the latest code, and creating artifacts.
 
+  ![Alt text](img/BuildPipeline.jpg)
+  
 2. **Steps**:
     - Install Python 3.10.
     - Install necessary Python packages.
@@ -196,6 +198,8 @@ CAPSTONE PROJECT
 1. **Create Release Pipeline**:
     - Define the release pipeline in `SBIT Deploy Pipeline.json`.
     - Configure tasks for extracting artifacts, installing Databricks CLI, and deploying code to Databricks workspace.
+      
+  ![Alt text](img/ReleasePipelineStages.jpg)
 
 2. **Steps**:
     - Use Python 3.10.
@@ -203,6 +207,8 @@ CAPSTONE PROJECT
     - Install Databricks CLI.
     - Deploy notebooks to Databricks workspace.
     - Run integration tests using the `run-integration-test.sh` script.
+
+   ![Alt text](img/ReleasePipelineTasks.jpg)
 
 3. **Trigger**:
     - Manually triggered for controlled deployments to QA/Production environments.
